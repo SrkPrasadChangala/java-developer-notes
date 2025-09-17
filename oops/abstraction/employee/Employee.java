@@ -9,15 +9,19 @@ public abstract class Employee {
     public Employee(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        
-        System.out.println("Employee constructor called for: " + firstName + " " + lastName);
+
+        System.out.println("Employee constructor called for: " + this.getFullName());
     }
 
     // Abstract method to be implemented by subclasses
     protected abstract void calculateSalary(double salary);
 
+    //getter for name
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
     public double getSalary() {
-        System.out.println("Inside getSalary method of Employee class");
+        System.out.println("Inside getSalary method of Employee class: " + this.getFullName());
         return salary;
     }
 

@@ -9,18 +9,18 @@ public class Hourly extends Employee {
         this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
         calculateSalary(hoursWorked * hourlyRate);
-        System.out.println("inside Hourly constructor");
+        System.out.println("inside Hourly constructor:" + this.getFullName());
     }
 
     @Override
     protected void calculateSalary(double salary) {
-        System.out.println("Inside abstract method Implementation to calculate salary for hourly employee ");
+        System.out.println("Inside abstract method Implementation to calculate salary for hourly employee: " + this.getFullName());
         setSalary(salary);
     }
 
     @Override
     public double getSalary() {
-        System.out.println("Inside getSalary method of Hourly class");
+        System.out.println("Inside getSalary method of Hourly class: " + this.getFullName());
         return super.getSalary();
     }
 }
