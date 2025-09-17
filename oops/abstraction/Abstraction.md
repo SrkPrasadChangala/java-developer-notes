@@ -37,3 +37,7 @@ class Hourly extends Employee {
 ### Summary
 
 Abstraction in this codebase enables flexible and extensible payroll processing by separating what an employee does (calculating salary) from how each type of employee does it. Review the provided Java files to see abstraction in action.
+
+
+#### Reference
+[Abstract Class in Python](https://www.pythontutorial.net/python-oop/python-abstract-class/)
